@@ -1,0 +1,40 @@
+.profile_card {
+  .profile_img_card{
+    border-radius: 7px;
+    .profile1-img {
+      img {
+        overflow: hidden;
+        width: 50%;
+        border-radius: 50%;
+      }
+    }
+    .profile_caption {
+      margin-bottom: 10px;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .caption{
+      margin-bottom: 10px;
+    }
+    .btn-social{
+      color: #fff;
+      background-color: #868e96;
+      border: 0;
+      transition: all .2s;
+      font-size: 16px;
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      padding: 0;
+      display: inline-block;
+      text-align: center;
+      &:not(:last-child){
+        margin-right: 10px;
+      }
+      i{
+        line-height: 40px;
+      }
+    }
+  }
+}

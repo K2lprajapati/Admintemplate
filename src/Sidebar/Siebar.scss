@@ -1,0 +1,57 @@
+@import '../Helper/veriable';
+
+.col-2,.col-4,.col-6,.col-8,.col-10,.col-12,.col-14,.col-16,.col-18,.col-20,.col-22,.col-24{
+  @include col_mixin;
+}
+.sidebar_menu{
+  /*height: 100vh;*/
+  @media only screen and (min-width:320px) and (max-width:480px) {
+    height: unset;
+  }
+}
+.menu_item_header{
+  text-align: left;
+}
+/*---form section---*/
+.card_section{
+  margin-bottom: 30px;
+  .Login{
+    .register{
+      margin-bottom: 0;
+      font-size: 11px;
+    }
+    .forget_password{
+      font-size: 11px;
+    }
+    .form_title{
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+    .form_item{
+      margin-bottom: 12px;
+      .remember{
+        float: left;
+      }
+    }
+  }
+  .ant-card-body{
+    padding:0;
+  }
+  .login-form2{
+    padding: 30px;
+    margin-top: 50px;
+    .subscribe-button{
+      width:100%;
+    }
+    .form_title_subscribe{
+      font-size:25px;
+    }
+  }
+  .login-form{
+    padding: 25px;
+    .login-form-button{
+      width: 100%;
+    }
+  }
+}
+

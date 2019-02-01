@@ -1,0 +1,41 @@
+$border-color:rgba(0,0,0,.1);
+$background-color:#fff;
+$instagram-social-icon-bg:#82685a;
+$twitter-social-bg:#00c7f7;
+
+@mixin after_befor_cardinfo($right,$left){
+  content: "";
+  border: 0.5px solid $border-color;
+  display: block;
+  top: 50%;
+  position: absolute;
+  width: 40%;
+  right: $right;
+  left: $left;
+}
+@mixin col_mixin {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@mixin card_info_mixin(){
+  font-size: 50px;
+  margin-bottom: 0;
+}
+@mixin no_card_icon($background-color-icon){
+  /*background-color: $red-bg;*/
+  width: 70px;
+  height: 70px;
+  background-color: $background-color-icon;
+  border-radius: 50px;
+  color: #ffff;
+  font-size: 28px;
+  margin-right: 10px;
+}
+@mixin social_card_section($social-icon-bg){
+  padding: 24px 25px;
+  background-color: $social-icon-bg;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 50px;
+}

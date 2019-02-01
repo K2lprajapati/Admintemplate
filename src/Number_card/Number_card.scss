@@ -1,0 +1,81 @@
+@import "../Helper/veriable";
+
+.col-2, .col-4, .col-6, .col-8, .col-10, .col-12, .col-14, .col-16, .col-18, .col-20, .col-22, .col-24 {
+  @include col_mixin;
+}
+
+.up_menu_header {
+  padding: 0 60px;
+  .Icon_main{
+    background-color:#fff;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 10px;
+    .Icon_div{
+        @include no_card_icon(#66bb6a);
+      i{
+        line-height: 70px;
+      }
+    }
+    .title_text{
+      font-size: 23px;
+      width: 27%;
+      p:first-child{
+        margin-bottom: 0;
+        font-size: 30px;
+      }
+      p:nth-of-type(2){
+        font-size: 12px;
+        text-align:center;
+      }
+    }
+  }
+}
+.divider{
+  border: 0.5px solid #cbcdd2;
+  width: 98%;
+}
+.version-3-card{
+  background-color: #fff;
+  border-radius: 5px;
+  .version-card3-main{
+    @extend .version-card-main;
+    background-color: $instagram-social-icon-bg !important;
+  }
+  .version-card2-main{
+    @extend .version-card-main;
+    background-color: $twitter-social-bg!important;
+  }
+  .version-card-main{
+    @include social_card_section(#335397);
+  }
+  .version-card-body{
+    padding: 24px 24px;
+    .version-card-body-ul{
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0;
+      li{
+        width: 50%;
+        position: relative;
+        &:not(:last-child):after{
+          content: "";
+          position: absolute;
+          border: 1px solid #f0f2f5;
+          height: 45px;
+          top: 10%;
+          right: 0;
+        }
+        p:first-child,
+        p:nth-of-type(2){
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
