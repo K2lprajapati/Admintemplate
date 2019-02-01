@@ -10,6 +10,7 @@ class Form_page extends Component {
             <div>
                 <div>
                     <p>hello form_page</p>
+                    <p>?dsjdgjkgajksgjagjkagkjagdkags</p>
                 </div>
             </div>
         );
