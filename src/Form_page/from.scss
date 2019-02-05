@@ -1,3 +1,17 @@
+@import "../Helper/veriable";
+
 .up_menu_header1{
   padding:60px;
+}
+.twitter_signin_button{
+  @include sign_in(#42aeec);
+  span{
+    padding-right: 10px;
+  }
+}
+.facebook_signin_button{
+  @include sign_in(#405D9D);
+  span{
+    padding-right: 10px;
+  }
 }
