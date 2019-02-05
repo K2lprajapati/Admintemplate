@@ -39,3 +39,9 @@ $twitter-social-bg:#00c7f7;
   border-top-right-radius: 5px;
   font-size: 50px;
 }
+
+@mixin sign_in($background-color-button){
+  margin: 10px 0;
+  font-size: 1.2em;
+  background-color: $background-color-button;
+}
