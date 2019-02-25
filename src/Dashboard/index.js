@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Layout,  Icon, Row, Col } from 'antd';
+import {Layout, Icon, Row, Col, Divider} from 'antd';
 import './dashboard.scss';
 
 const { Content,Header } = Layout;
@@ -19,7 +19,7 @@ class Dashboard extends Component {
                                                 <Icon type="line-chart"/>
                                             </div>
                                             <div className="card-info">
-                                                <span>profit</span>
+                                                <span><Divider>profit</Divider></span>
                                             </div>
                                             <div className="icon_div">
                                                 <p>45<sub>%</sub></p>
